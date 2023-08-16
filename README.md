@@ -24,4 +24,5 @@ add file -> create new file -> BoxNSegAI/2DBB/최승훈/1.txt
 - ci : CI 설정 파일 수정
 - perf : 성능 개선
 - chore : 그 외 자잘한 수정
+  
 [Angular commit convention](https://velog.io/@outstandingboy/Git-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%EA%B7%9C%EC%95%BD-%EC%A0%95%EB%A6%AC-the-AngularJS-commit-conventions)
