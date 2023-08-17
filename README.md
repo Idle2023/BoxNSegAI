@@ -11,7 +11,7 @@
 각자 2DBB, 2DSS, 3DBB 폴더에 이름으로 폴더를 하나 만듭니다.
 add file -> create new file -> BoxNSegAI/2DBB/최승훈/1.txt
 폴더가 생성되려면 최소 하나의 파일이 있어야하므로 임시로 파일을 만들어주고 다른 파일을 올린 뒤에 1.txt를 삭제합니다.
-파일명은 2DBB/최승훈/2DBBs_1 이런 식으로 자유롭게 작성해주시면 됩니다!!
+파일명은 2DBB/최승훈/2DBBs_1.ipynb 이런 식으로 자유롭게 작성해주시면 됩니다!!
 
 ## commit message 규칙
 - feat : 새로운 기능 추가
