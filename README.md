@@ -7,7 +7,9 @@
 4. Post processing 필수 
 5. 2DBB, 3DBB mAP 높도록, 2DSS IoU 높도록
 
-**중간에 결과 확인할 수 있게 시각화 또는 print 꼭 하기!!**
+**초안은 3번, 4번 일반적으로 쓰는 방식 쓰고 precision mAP or IoU 계산하는 코드**
+
+**중간 중간 결과 확인할 수 있게 시각화 또는 print 꼭 하기!!**
 ### 의견...
 2번이 type error, index error(dimension), 등 어려움 tensor type이 낯설어서 더 어렵당…
 Pertrained model에 따라 난이도가 달라짐
