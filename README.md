@@ -7,7 +7,7 @@
 4. Post processing 필수 
 5. 2DBB, 3DBB mAP 높도록, 2DSS IoU 높도록
 
-**초안은 3번, 4번 일반적으로 쓰는 방식 쓰고 precision mAP or IoU 계산하는 코드**
+**초안은 3번, 4번 일반적으로 쓰는 방식 쓰고 precision mAP or IoU 계산하는 것까지**
 
 **중간 중간 결과 확인할 수 있게 시각화 또는 print 꼭 하기!!**
 ### 의견...
