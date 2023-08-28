@@ -1,5 +1,7 @@
-# SSD (Single-shot multibox detection)
+### Goal of our task - 2D Object detection
+![image](https://github.com/Idle2023/BoxNSegAI/assets/127823391/f60dac9a-2ae9-4e6c-88d9-424670562a19)
 
+# SSD (Single-shot multibox detection)
 ### Network
 #### 세 가지 네트워크로 구성될 수 있는 CNN (Convolutional Neural Network)
 1. Base convolutions
@@ -42,4 +44,21 @@
 ```
 python3 train.py
 ```
+
+
+## Data preprocessing
+#### Visualization of image transformation 
+
+![image](https://github.com/Idle2023/BoxNSegAI/assets/127823391/f86c31bf-f647-4665-a941-26918df8e488)
+
+Applied techniques
+- resized to 300,300
+- Boundary coordinates converted to fractional form ([0,1])
+- photometric distortions in random order, each with 50% chance of occurrence
+- Expand image (zoom out) with a 50% chance - helpful for training detection of small objects
+- Randomly crop image (zoom in)
+- Flip image with a 50% chance
+- Normalize by mean and standard deviation of ImageNet data that our base VGG was trained on
+
+
 
