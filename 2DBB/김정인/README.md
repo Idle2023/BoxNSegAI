@@ -17,5 +17,29 @@
   - class prediction: 각 location 에서 클래스의 존재 확률을 예측
   - Prediction stage 에서 모델의 최종 출력: offset(shape: 8732x4), class_score(shape: 8732Xclass_num)
 
+### Implementation
+#### 실행환경
+1. Google Colab
+```
+📦 2dbb_ji
+├─ 2DBBs
+│  ├─ training.txt
+│  └─ training
+│     ├─ images
+│     └─ labels
+├─ json_files
+│  ├─ label_map.json
+│  ├─ training_images.json
+│  └─ training_objects.json
+├─ datasets.py
+├─ model.py
+├─ utils.py
+└─ train.ipynb
+```
 
+
+2. Local
+```
+python3 train.py
+```
 
