@@ -92,13 +92,13 @@ def run()
 
 ### Validation & Test
 #### Validation
-Precision: 예측된 Positive 결과 중 실제로 Positive인 비율입니다. 즉, 얼마나 많은 예측이 올바르게 되었는지 나타냅니다. <br>
-Recall: 실제 Positive 중 예측된 Positive의 비율입니다. 즉, 모든 Positive 대상 중 몇 개를 성공적으로 예측했는지 나타냅니다.<br> 
-mAP@0.5: 평균 정밀도를 기반으로 한 평균 정밀도 값으로, IoU(Intersection over Union) 임계값이 0.5일 때 계산됩니다.<br>
-mAP@0.5:0.95: mAP의 평균 값으로 IoU가 0.5에서 0.95까지 0.05씩 증가할 때마다 계산됩니다. 이것은 모델의 성능을 다양한 IoU 임계값에 대해 평가합니다. <br>
-Box Loss: Bounding box의 예측 오차를 나타냅니다. <br>
-Obj Loss: 객체 예측의 오차를 나타냅니다. <br>
-Class Loss: 클래스 예측의 오차를 나타냅니다. <br>
+- Precision: 예측된 Positive 결과 중 실제로 Positive인 비율입니다. 즉, 얼마나 많은 예측이 올바르게 되었는지 나타냅니다. <br>
+- Recall: 실제 Positive 중 예측된 Positive의 비율입니다. 즉, 모든 Positive 대상 중 몇 개를 성공적으로 예측했는지 나타냅니다.<br> 
+- mAP@0.5: 평균 정밀도를 기반으로 한 평균 정밀도 값으로, IoU(Intersection over Union) 임계값이 0.5일 때 계산됩니다.<br>
+- mAP@0.5:0.95: mAP의 평균 값으로 IoU가 0.5에서 0.95까지 0.05씩 증가할 때마다 계산됩니다. 이것은 모델의 성능을 다양한 IoU 임계값에 대해 평가합니다. <br>
+- Box Loss: Bounding box의 예측 오차를 나타냅니다. <br>
+- Obj Loss: 객체 예측의 오차를 나타냅니다. <br>
+- Class Loss: 클래스 예측의 오차를 나타냅니다. <br>
 앞의 epochs 30 정도의 데이터가 날라갔지만 😿 전반적으로 성능이 향상되고 있음을 볼 수 있습니다.
 
 #### Test
