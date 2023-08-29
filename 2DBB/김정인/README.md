@@ -60,5 +60,7 @@ Applied techniques
 - Flip image with a 50% chance
 - Normalize by mean and standard deviation of ImageNet data that our base VGG was trained on
 
+Inference (epoch 5)
+<img width="1089" alt="image" src="https://github.com/Idle2023/BoxNSegAI/assets/127823391/d5870908-4cd4-4647-99df-80c4f095a69c">
 
 
