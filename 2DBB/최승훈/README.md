@@ -44,7 +44,7 @@ DataLoader는 데이터셋의 항목들을 배치로 자동으로 가져오는 �
 - 각 이미지에 대한 레이블 정보에 이미지 인덱스를 추가합니다. 이는 후속 처리에서 해당 레이블이 어떤 이미지에 속하는지 판별하기 위함입니다.
 - 모든 이미지를 스택하여 하나의 배치 텐서로 만들고, 모든 레이블도 연결(concatenate)합니다.
 
-### model
+## model
 mode은 자율주행이기 때문에 비교적 빠른 **YOLOv5**을 사용했습니다.
 pytroch로 된 YOLOv5 공식 repository를 clone해서 사용했습니다. 
 number of classes을 데이터셋에 맞게 10으로 바꾸어 주었습니다.
@@ -73,7 +73,7 @@ number of classes을 데이터셋에 맞게 10으로 바꾸어 주었습니다.
 def run()
 ```
 
-### train
+## train
 * 		Fine-tuning 준비
     * 모델의 모든 파라미터들을 훈련 가능하게 설정합니다. 
     * 모델은 GPU 또는 CPU로 이동되며, 이에 따라 연산이 수행됩니다.
@@ -90,8 +90,8 @@ def run()
     *  학습이 진행됨에 따라 학습률을 감소시켜, 훈련이 더 안정적으로 수행되도록 합니다.
 **초기 transfer learning loss보다 초기 fine tuning 방식의 loss가 더 낮아(5.1 > 2.1) fine tuning을 사용했습니다.**
 
-### Validation & Test
-#### Validation
+## Validation & Test
+### Validation
 - Precision: 예측된 Positive 결과 중 실제로 Positive인 비율입니다. 즉, 얼마나 많은 예측이 올바르게 되었는지 나타냅니다. <br>
 - Recall: 실제 Positive 중 예측된 Positive의 비율입니다. 즉, 모든 Positive 대상 중 몇 개를 성공적으로 예측했는지 나타냅니다.<br> 
 - mAP@0.5: 평균 정밀도를 기반으로 한 평균 정밀도 값으로, IoU(Intersection over Union) 임계값이 0.5일 때 계산됩니다.<br>
@@ -101,7 +101,7 @@ def run()
 - Class Loss: 클래스 예측의 오차를 나타냅니다. <br>
 앞의 epochs 30 정도의 데이터가 날라갔지만 😿 전반적으로 성능이 향상되고 있음을 볼 수 있습니다.
 
-#### Test
+## Test
 Precision (정밀도): 예측된 Positive 결과 중 실제로 Positive인 비율입니다. 
 이 값이 0.6779로 나온 것은, 모델이 Positive로 예측한 결과 중 약 67.79%가 실제로 Positive임을 나타냅니다. 
 
@@ -115,7 +115,7 @@ IoU 임계값이 0.5일 때의 평균 정밀도가 약 48.52%임을 나타냅니
 mAP@0.5:0.95: mAP의 평균 값으로 IoU가 0.5에서 0.95까지 0.05씩 증가할 때마다 계산됩니다. 
 이 값이 0.2940로 나타나는 것은, 다양한 IoU 임계값에 대한 평균 정밀도가 약 29.40%임을 나타냅니다.
 
-### Visualization
+## Visualization
 앞서 언급한 yolov5 공식 repository의 Detections class를 사용했습니다. test dataset image 중 일부입니다.
 <img width="402" alt="Screenshot 2023-08-29 at 9 39 41 PM" src="https://github.com/Idle2023/BoxNSegAI/assets/113033780/372eb4e7-2f32-4133-a78f-7e94edca2220">
 <img width="402" alt="Screenshot 2023-08-29 at 9 38 45 PM" src="https://github.com/Idle2023/BoxNSegAI/assets/113033780/c15cfa89-2300-4a94-97ea-f3d5325db640">
