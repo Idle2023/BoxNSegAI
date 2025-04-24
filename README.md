@@ -7,6 +7,7 @@
 ## 소개
 
 본 프로젝트는 도로 위에서 주변 객체를 빠르고 정확하게 인식하는 것이 목표입니다. 2D Bounding Box(2DBB) 데이터셋을 활용해 YOLOv5를 Fine-Tuning 하여 차량, 보행자, 신호등 등 총 9종의 Object를 Detection하고, 시각화하였습니다.
+
 ---
 
 ## 데이터셋 요약
@@ -15,7 +16,7 @@
 | 이미지/라벨 수 | 100 000 / 100 000 |
 | Split | train : val : test = **8 : 1 : 1** |
 | 포맷 | COCO json (`bbox`) |
-| 클래스 | car, truck, bus, special_vehicle, motorcycle, bicycle, pedestrian, traffic_sign, traffic_light, **none\*** |
+| 클래스 | car, truck, bus, special_vehicle, motorcycle, bicycle, pedestrian, traffic_sign, traffic_light, none |
 | 비고 | `none` 클래스는 평가 제외 |
 
 ### 폴더 구조
