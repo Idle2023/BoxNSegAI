@@ -2,13 +2,11 @@
 
 > **🏆 2023 인공지능 자율주행 알고리즘 챌린지 – 장려상**
 
----
 
 ## 소개
 
 본 프로젝트는 도로 위에서 주변 객체를 빠르고 정확하게 인식하는 것이 목표입니다. 2D Bounding Box(2DBB) 데이터셋을 활용해 YOLOv5를 Fine-Tuning 하여 차량, 보행자, 신호등 등 총 9종의 Object를 Detection하고, 시각화하였습니다.
 
----
 
 ## 데이터셋 요약
 | 항목 | 값 |
@@ -35,7 +33,6 @@
     └── labels/
 ```
 
----
 
 ## 파이프라인 개요
 ### CustomDataset & DataLoader
@@ -76,7 +73,6 @@ result[1] : [리스트]           # 학습 모드와 동일한 3‑scale feature
 3. **Loss** : `ComputeLoss` – Box·Obj·Cls
 4. **Mixed Precision** : `torch.cuda.amp` 적용, VRAM ≈ 6 GB
 
----
 
 ## 성능
 | Metric | Val | Test |
@@ -88,7 +84,6 @@ result[1] : [리스트]           # 학습 모드와 동일한 3‑scale feature
 
 *본 실험은 100,000장 이미지 중 10,000장으로 진행되었습니다.
 
----
 
 ## 시각화
 <div style="display: flex; gap: 10px;">
@@ -96,7 +91,6 @@ result[1] : [리스트]           # 학습 모드와 동일한 3‑scale feature
   <img src="https://github.com/user-attachments/assets/0f645c3d-941f-4ae5-97d6-2fb3b27aa783" width="49%">
 </div>
 
----
 
 ## 수상 내역
 | 구분 | 상금       | 팀 수 |
@@ -107,7 +101,6 @@ result[1] : [리스트]           # 학습 모드와 동일한 3‑scale feature
 
 본 프로젝트에서는 2D Bounding Box의 mAP 성능이 우수하게 나타났습니다.
 
----
 
 ## 참고
 * [YOLOv5 ‑ Ultralytics](https://github.com/ultralytics/yolov5)
