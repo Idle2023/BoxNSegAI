@@ -18,12 +18,20 @@
 | 클래스 | car, truck, bus, special_vehicle, motorcycle, bicycle, pedestrian, traffic_sign, traffic_light, **none\*** |
 | 비고 | `none` 클래스는 평가 제외 |
 
-### 폴더 구조 (발췌)
+### 폴더 구조
 ```
 2DBB/
- ├─ training/ images/ labels/
- ├─ validation/ …
- └─ test/ …
+│ # images/ .jpg (1920 x 1080)
+| # labels/ .json
+├── training/
+│   ├── images/                
+│   └── labels/                
+├── validation/
+│   ├── images/                
+│   └── labels/                
+└── test/
+    ├── images/                
+    └── labels/
 ```
 
 ---
